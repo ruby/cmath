@@ -1,4 +1,6 @@
 # coding: utf-8
+# frozen_string_literal: true
+
 Gem::Specification.new do |spec|
   spec.name          = "cmath"
   spec.version       = "0.0.1"
