@@ -1,8 +1,12 @@
-# Cmath
+# CMath
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cmath`. To experiment with that code, run `bin/console` for an interactive prompt.
+Trigonometric and transcendental functions for complex numbers.
 
-TODO: Delete this and the text above, and describe your gem
+CMath is a library that provides trigonometric and transcendental functions for complex numbers. The functions in this module accept integers, floating-point numbers or complex numbers as arguments.
+
+Note that the selection of functions is similar, but not identical, to that in module math. The reason for having two modules is that some users aren't interested in complex numbers, and perhaps don't even know what they are. They would rather have Math.sqrt(-1) raise an exception than return a complex number.
+
+For more information you can see Complex class.
 
 ## Installation
 
@@ -22,7 +26,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To start using this library, simply require cmath library:
+
+```
+require "cmath"
+```
 
 ## Development
 
