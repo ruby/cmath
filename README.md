@@ -1,5 +1,7 @@
 # CMath
 
+[![Build Status](https://travis-ci.org/ruby/cmath.svg?branch=master)](https://travis-ci.org/ruby/cmath)
+
 Trigonometric and transcendental functions for complex numbers.
 
 CMath is a library that provides trigonometric and transcendental functions for complex numbers. The functions in this module accept integers, floating-point numbers or complex numbers as arguments.
