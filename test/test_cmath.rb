@@ -3,7 +3,7 @@ require 'test/unit'
 require 'cmath'
 
 class TestCMath < Test::Unit::TestCase
-  def test_any_method!
+  def test_deprecated_method
     $VERBOSE = true
     assert_warning(/CMath#sqrt! is deprecated; use CMath#sqrt or Math#sqrt/) do
       CMath.sqrt!(1)
