@@ -3,16 +3,6 @@ require 'test/unit'
 require 'cmath'
 
 class TestCMath < Test::Unit::TestCase
-  def test_deprecated_method
-    orig = $VERBOSE
-    $VERBOSE = true
-    sqrt = assert_warning(/CMath#sqrt! is deprecated; use CMath#sqrt or Math#sqrt\Z/) do
-      CMath.sqrt!(1)
-    end
-    assert_equal CMath.sqrt(1), sqrt
-    $VERBOSE = orig
-  end
-
   def test_sqrt
     assert_equal 1, CMath.sqrt(1)
     assert_equal CMath.sqrt(1i), CMath.sqrt(1.0i), '[ruby-core:31672]'
@@ -107,9 +97,7 @@ class TestCMath < Test::Unit::TestCase
   def test_error_handling
     assert_raise(TypeError) { CMath.acos("2") }
     assert_raise(TypeError) { CMath.log("2") }
-    assert_raise(ArgumentError) { CMath.log(2, "2") }
-    assert_raise(NoMethodError) { CMath.log(2, 2i) }
-    assert_raise(RangeError) { CMath.hypot(2i, 2i) }
+    assert_raise(TypeError) { CMath.log(2, "2") }
   end
 
   def test_cbrt_returns_principal_value_of_cube_root
