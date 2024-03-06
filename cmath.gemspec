@@ -16,5 +16,5 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = []
   spec.require_paths = ["lib"]
-  spec.required_ruby_version = ">= 2.3.0"
+  spec.required_ruby_version = ">= 2.5.0"
 end
