@@ -6,10 +6,10 @@ class TestCMath < Test::Unit::TestCase
   def test_deprecated_method
     orig = $VERBOSE
     $VERBOSE = true
-    assert_warning(/CMath#sqrt! is deprecated; use CMath#sqrt or Math#sqrt/) do
+    sqrt = assert_warning(/CMath#sqrt! is deprecated; use CMath#sqrt or Math#sqrt/) do
       CMath.sqrt!(1)
     end
-    assert_equal CMath.sqrt(1), CMath.sqrt!(1)
+    assert_equal CMath.sqrt(1), sqrt
     $VERBOSE = orig
   end
 
