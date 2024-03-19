@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "cmath"
   spec.version       = version
   spec.authors       = ["Tadayoshi Funaba"]
-  spec.email         = [nil]
+  spec.email         = ["tadf@dotrb.org"]
 
   spec.summary       = "Provides Trigonometric and Transcendental functions for complex numbers"
   spec.description   = "CMath is a library that provides trigonometric and transcendental functions for complex numbers. The functions in this module accept integers, floating-point numbers or complex numbers as arguments."
