@@ -24,6 +24,9 @@ module CMath
 
   include Math
 
+  # The version string.
+  VERSION = "1.0.0"
+
   # Backup of Math is needed because mathn.rb replaces Math with CMath.
   RealMath = Math # :nodoc:
   private_constant :RealMath

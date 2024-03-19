@@ -1,9 +1,10 @@
 # coding: utf-8
 # frozen_string_literal: true
 
+version = File.read("#{__dir__}/lib/cmath.rb")[/^\s*VERSION\s*=\s*"([^"]*)"/, 1]
 Gem::Specification.new do |spec|
   spec.name          = "cmath"
-  spec.version       = "1.0.0"
+  spec.version       = version
   spec.authors       = ["Tadayoshi Funaba"]
   spec.email         = [nil]
 
