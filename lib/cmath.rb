@@ -30,7 +30,11 @@ module CMath
 
   module_function
 
-  def domain?(z, nonreal = false)
+  # Returns +false+ if _z_ is real but not in domain by the block.
+  # If no block is given, domain is not limited.
+  # If _z_ is not real, returns _nonreal_ that is defaulted to +false+.
+  # If _z_ does not have +real?+ method, returns +true+.
+  private def domain?(z, nonreal = false) # :nodoc:
     unless z.respond_to?(:real?)
       return true
     end

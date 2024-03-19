@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/ruby/cmath"
   spec.license       = "BSD-2-Clause"
 
-  spec.files         = "lib/cmath.rb"
+  spec.files         = %w[.document .rdoc_options LICENSE.txt README.md lib/cmath.rb]
   spec.bindir        = "exe"
   spec.executables   = []
   spec.require_paths = ["lib"]
