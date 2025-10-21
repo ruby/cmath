@@ -1,3 +1,4 @@
-*.txt
-*.md
+BSDL
+COPYING
+README.md
 lib/
